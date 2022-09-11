@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-br" class="no-js">
+
+<head>
+    <title> VS Code - Guia</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="LeoHandler">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content=" LeoHandler - Desenvolvedor Java">
+    <meta property="og:url" content="https://leohandler.github.io/">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-grid.css" />
+    <link rel="stylesheet" href="img/favicon.ico" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XVJ0262JVT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XVJ0262JVT');
+    </script>
+</head>
+
+<body class="bgr-primary" id="topPage" style=background-color:#e3e3e3>
+    <div class="container">
+        <div class="blog-content">
+            <div class="p-4">
+				 <h3></h3>
+                 <h3> Guia básico - Instalação Visual Studio code</h3>
+                <div class="p-2">
+                    <p> 
+                        Olá, como algumas pessoas (só a Karol) pediu para auxiliar a baixar, instalar e 
+                        configurar o Visual Studio Code para a linguagem 'C', resolvi criar esse tutoriazinho aqui :)
+                        Obviamente tem centenas de videos ensinando a fazer isso, porem vou explicar
+                        de maneira resumida e rápida. 
+                    </p>
+                </div>
+                <h4> Como baixar? </h4>
+                <div class="p-2">
+                    <p> Para baixar é muito simples, basta entrar no site oficial da IDE <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer"> (Clique aqui para baixar) </a>
+                        e pressionar o botão Download para Windows (Ou o Sistema operacional que você utiliza) <br>
+						<br>
+                        <img src="https://i.imgur.com/UDCZB1M.png" width="800" height="478">
+                    </p>
+					<h5> Como Instalar? </h5>
+                    <p>
+                        Após realizar o download e executar o arquivo de instalação, selecione o idioma de sua preferência
+                        aceite os termos de contrato, e marque as opções desejadas (todas são opcionais) <br> <br>
+                        <img src="./img/install.png">
+                    </p>
+                    <p>
+					<h5> Instalação - Extensões </h5>
+                    <p>
+                        Após realizar a instalação, execute o studio code e siga as imagens abaixo
+						para instalar as extensões necessárias para a linguagem 'C' <br> <br>
+						<img src="./img/passo1.png" width="800" height="478"> <br> <br>
+						<img src="./img/passo2.png" width="800" height="478"> <br> <br>
+						<img src="./img/passo3.png" width="800" height="478"> <br> <br>
+						
+						Pronto! Após isso a instalação e configuração do Visual Studio Code está finalizada, agora será necessário
+						instalar o MinGW <b>(Não é necessário caso utilize o sistema operacional Ubuntu)</b> <br> <br>
+                    </p>
+					<h6> <b>MinGW - Instalação</b> </h6>
+                    <p> 
+                        Para compilar a linguagem C no Windows, é necessario instalar alguns "pacotes"
+						e para fazer isso, é necessario baixar o MinGW <a href="https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/" target="_blank" rel="noopener noreferrer"> (Clique aqui para baixar) </a> <br> <br> <b>Siga as imagens abaixos para efetuar a instalação: </b><br> <br>
+						<img src="./img/minpasso1.png" width="800" height="478"> <br> <br>
+						<img src="./img/minpasso2.png" width="800" height="478"> <br> <br>
+						<img src="./img/minpasso3.png" width="800" height="478"> <br> <br>
+						<img src="./img/minpasso4.png" width="800" height="478"> <br> <br>
+						
+						Pronto, MinGW instalado e pronto para compilar progamas.. Agora falta o último passo para tudo funcionar
+						perfeitamente em seu computador! <br> <br>
+                    </p>
+					<h6> <b>Variáveis Ambientes:</b> </h6>
+                    <p>
+                        E por último, mais não menos importante é necessário realizar algumas coisas na varíaveis do Windows <br> <br>
+						<b>1. Primeiramente Procure por "variavéis" na busca do Windows</b> <br> <br>
+						<img src="./img/varpasso1.png" width="500" height="402"> <br> <br>
+						<b>2. Clique na opção "Variáveis de ambiente"</b> <br> <br>
+						<img src="./img/varpasso2.png" width="300" height="340"> <br> <br>
+						<b>3. Selecione a aba "Path" e clique na opção "Editar"</b> <br> <br>
+						<img src="./img/varpasso3.png" width="400" height="377"> <br> <br>
+						<b>4. Clique em "Novo" e cole o directorio da instalação do MinGW (Geralmente é instalado em "C:\MinGW\bin")</b> <br>
+						<b>4.1. Após isso, presione em OK</b> <br>
+						<img src="./img/varpasso4.png" width="400" height="377"> <br> <br>
+						<b>5. Repita esse mesmo processo no quadrado abaixo (Selecione "PATCH" e clique em editar" </b> <br>
+						<img src="./img/varpasso5.png" width="400" height="377"> <br> <br>
+						<b>6. E novamente clique em "Novo" e cole o directorio da instalação do MinGW</b> <br>
+						<img src="./img/varpasso6.png" width="400" height="377"> <br> <br> <br> <br>
+						
+                        </p>
+                    </p>
+                    <p>
+					<h6> <b>Finalização </b> </h6>
+                            Para garantir que tudo funcione perfeitamente, reinicie o computador! <br>
+							Após isso já está tudo funcionando e você já pode utilizar o visual studio code para compilar arquivos .c :)
+							<br>  <br> <br><br><br>
+                    </p>
+                    <p>
+					<h6> <font size="5"> <b>Guia Básico para iniciar no Studio Code</b> </font> </h6>
+                        Para deixar seus codigos de maneira organizada no studio code, crie uma pasta em algum directorio <br>
+						eu utilizo na area de trabalho mesmo. <br> <br>
+						<b>1. Após criar uma pasta, dentro do studio code procure pela aba "Arquivo" e clique em "Abrir Pasta"</b> <br>
+						<b>1.1 Após isso, selecione a pasta que você criou</b> <br>
+						<img src="./img/vspasso1.png" width="800" height="478"> <br> <br>
+						<b>2. Agora basta clicar com o botão direito nesse espaço e criar um novo arquivo</b> <br>
+						<b>Obs: O nome do arquivo sempre deve vim acompanhado da extensão .c (EX: alfa.c)</b> <br>
+						<img src="./img/vspasso2.png" width="800" height="478"> <br> <br>
+						<b>Finalização - Pronto, agora é só começar a codar :)</b> <br>
+						<img src="./img/vspasso3.png" width="800" height="478"> <br> <br>
+                    </p>
+                    </div>
+                </div>
+            </div>
+			<footer class="d-flex justify-content-center"> <b> Criado com muito <span id="typing"> ☕ </span> por <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer">  LeoHandler </a> </b></footer> <br>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="js/typed.js/typed.min.js"></script>
+    <script type="text/javascript">
+        var typed = new Typed('#typing', {
+            strings: ["🍫", "🍺", "☕", "🍷", "🍾", "🍕", "🥪"],
+            loop: true,
+            typeSpeed: 120,
+            backSpeed: 120
+        });
+        $('#current-year').text(new Date().getFullYear() - 2003);
+    </script>
+</body>
+
+</html>

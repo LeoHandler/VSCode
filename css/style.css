@@ -1,0 +1,29 @@
+:root {
+    --color-primary: #000713;
+    --color-secondary: #0c111a;
+    --color-secondary-dark: #0c111a6c;
+    --color-accent: #c3d8ff;
+    --color-typing: #be1010;
+    --color-skill-container: #c6e9da;
+    --color-email-container: #3f1458;
+    --color-link: #a0dbf0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+.product-preview {
+    padding: 12px;
+    margin: 8px;
+    width: 140px;
+    border: dashed 1px rgba(0, 0, 0, 0.411);
+}
+
+.product-preview:hover {
+    transform: scale(1.1);
+}
